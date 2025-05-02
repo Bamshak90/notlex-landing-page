@@ -75,6 +75,7 @@ ul {
   /* padding: 0 40px; */
   position: relative;
   overflow: visible;
+  flex-wrap: wrap;
 }
 
 .main-section .text-content {
@@ -328,6 +329,89 @@ textarea.form-control {
   text-decoration: underline;
 }
 
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 768px) {
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar .btn {
+    margin-top: 20px;
+  }
+
+  .main-section .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .main-section .text-content {
+    position: static;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .main-section button {
+    margin-top: 20px;
+  }
+
+  .main-section .image-wrapper {
+    position: static;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .call-to-action .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .call-to-action .text-content {
+    max-width: 100%;
+  }
+
+  .grid-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .grid-section img {
+    max-width: 100%;
+  }
+
+  textarea.form-control {
+    width: 100%;
+    height: 120px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
 
 
